@@ -11,22 +11,18 @@ export default function ContactWindow() {
           <span className="font-semibold">Online</span>
         </div>
 
-        <span className="text-[10px] opacity-80">
-          MSN Messenger
-        </span>
-
       </div>
 
       {/* PROFILE */}
       <div className="flex items-center gap-3 p-3 bg-white border-b border-[#c0d6e4]">
 
         <div className="w-12 h-12 bg-[#cfe8ff] border border-[#7aa7c7] flex items-center justify-center text-xs">
-          ME
+          HP
         </div>
 
         <div>
           <div className="font-bold text-black text-sm">
-            Your Name
+            Harshada Parakh
           </div>
           <div className="text-gray-600 text-[10px]">
             Available • Windows XP Mode

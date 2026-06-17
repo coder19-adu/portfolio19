@@ -1,36 +1,46 @@
 export default function AboutWindow() {
   return (
-    <div className="p-5">
-      <div className="space-y-3 text-gray-800">
-        <p>
-          Hi, I'm Adu.
-        </p>
+    <div className="min-h-[320px] bg-[#ffffff] text-[12px] font-mono border border-gray-400 flex flex-col">
 
-        <p>
-          Frontend Developer passionate about
-          creating interactive web experiences.
-        </p>
-
-        <p>
-          Currently working with:
-        </p>
-
-        <ul className="list-disc ml-6">
-          <li>React</li>
-          <li>Tailwind CSS</li>
-          <li>Framer Motion</li>
-        </ul>
-
-        <p>
-          Currently learning:
-        </p>
-
-        <ul className="list-disc ml-6">
-          <li>AWS</li>
-          <li>Docker</li>
-          <li>Cloud Computing</li>
-        </ul>
+      {/* NOTEPAD HEADER (XP STYLE SIMULATION) */}
+      <div className="bg-[#e6e6e6] border-b border-gray-400 px-3 py-1 text-gray-800 text-[11px]">
+        
       </div>
+
+      {/* CONTENT */}
+      <div className="p-4 space-y-3 text-gray-900 leading-5">
+
+        <div>
+          👤 <b>Who I am</b><br />
+          • Full stack developer with experience in using React, JavaScript, Tailwind CSS, UI<br />
+          • Creative thinker who blends design and modern web development
+        </div>
+
+        <div>
+          💻 <b>What I do</b><br />
+          • Build responsive web apps using React.js,Tailwind CSS, Prompting<br />
+          • Skilled in using AI tools and prompt engineering for coding assistance, debugging, and creative UI development
+        </div>
+
+        <div>
+          🚀 <b>Current focus</b><br />
+          • Linux, cloud computing fundamentals to improve full-stack and deployment skills<br />
+          • Learning and Building AI based projects
+        </div>
+
+        <div>
+          🎯 <b>Goal</b><br />
+          • Internship in cloud / full-stack development<br />
+          • Work on real-world scalable web applications
+        </div>
+
+        <div>
+          ✨ <b>Extras</b><br />
+          • Quick learner with a strong ability to adapt to new technologies and effectively use AI tools and prompting to improve development
+        </div>
+
+      </div>
+
     </div>
   );
 }

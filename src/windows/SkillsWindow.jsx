@@ -1,23 +1,45 @@
 export default function SkillsWindow() {
   return (
-    <div className="p-4">
-      <h2 className="mb-4 text-xl font-bold">
-        System Properties
-      </h2>
+    <div className="min-h-[320px] bg-white text-[12px] font-mono border border-gray-400 flex flex-col">
 
-      <div className="space-y-3">
-        <p>Frontend</p>
-        <p>• React</p>
-        <p>• Tailwind</p>
-        <p>• Framer Motion</p>
+      {/* NOTEPAD TITLE BAR */}
+      <div className="bg-[#e6e6e6] border-b border-gray-400 px-3 py-1 text-[11px] text-gray-800">
+        
+      </div>
 
-        <p className="pt-3">
-          Currently Learning
-        </p>
+      {/* CONTENT */}
+      <div className="p-4 space-y-4 leading-5 text-gray-900">
 
-        <p>• AWS</p>
-        <p>• Docker</p>
-        <p>• Cloud Computing</p>
+        <div>
+          <b>Languages</b><br />
+          C, C++, Java, Python (Basics)
+        </div>
+
+        <div>
+          <b>Web Technologies</b><br />
+          HTML, CSS, JavaScript, React.js, Tailwind CSS
+        </div>
+
+        <div>
+          <b>Tools</b><br />
+          Git, GitHub, VS Code, Canva
+        </div>
+
+        <div>
+          <b>Operating Systems</b><br />
+          Windows, Linux (WSL Basics)
+        </div>
+
+        <div>
+          <b>Core Concepts</b><br />
+          Data Structures, OOPs, Operating Systems, Computer Networks, DBMS (Basics), SQL Queries
+        </div>
+
+        <div>
+          <b>Creative & Digital Skills</b><br />
+          Prompt Engineering, Trend Research, Content Ideation
+        </div>
+
       </div>
     </div>
   );

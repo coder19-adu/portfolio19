@@ -83,9 +83,8 @@ export default function Taskbar({
         })}
       </div>
 
-      {/* SYSTEM TRAY (Y2K CLOCK AREA) */}
       <div className="flex items-center bg-blue-950/40 border border-blue-300/20 px-3 py-1 rounded-sm">
-        <span className="text-white text-xs font-mono">
+        <span className="text-white text-sm font-mono">
           {time}
         </span>
       </div>

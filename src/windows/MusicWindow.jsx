@@ -35,7 +35,7 @@ export default function MusicWindow() {
       {/* HEADER */}
       <div className="flex justify-between px-2 py-2 bg-gradient-to-r from-gray-800 to-black border-b border-gray-700">
         <span className="text-gray-200">
-          WINAMP / WMP HYBRID
+          WINAMP
         </span>
         <span className="text-gray-400">
           2001
@@ -107,8 +107,8 @@ export default function MusicWindow() {
           ▶ 01 - ARE YOU BORED YET?
         </div>
 
-        <div>02 - XP STARTUP MIX</div>
-        <div>03 - DIAL-UP DREAMS</div>
+        <div>02 - EDGE OF THE EARTH</div>
+        <div>03 - PERFECT PLACES</div>
       </div>
     </div>
   );

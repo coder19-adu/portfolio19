@@ -5,6 +5,7 @@ import Wallpaper from "../assets/wallpapers/xp-wallpaper.jpg";
 import FolderIcon from "../assets/icons/folder.png";
 import MusicIcon from "../assets/icons/music.png";
 import RecycleIcon from "../assets/icons/recycle-bin.png";
+import PdfIcon from "../assets/icons/pdf.png";
 
 import DesktopIcon from "./DesktopIcon";
 import Taskbar from "./Taskbar";
@@ -122,11 +123,27 @@ export default function Desktop() {
         />
       </div>
 
+      {/* Resume File */}
+<div className="absolute top-5 left-36 z-10">
+  <DesktopIcon
+    icon={PdfIcon}
+    label="Resume.pdf"
+    isSelected={selectedIcon === "resume"}
+    onClick={() => {
+      setSelectedIcon("resume");
+      window.open(
+        "/harshadaparakh_resume.pdf",
+        "_blank"
+      );
+    }}
+  />
+</div>
+
       {/* WINDOWS */}
       {openWindows.includes("about") &&
         !minimizedWindows.includes("about") && (
           <Window
-            title="About Me"
+            title="Harshada.txt - Notepad"
             isActive={activeWindow === "about"}
             onFocus={() => focusWindow("about")}
             onClose={() => closeWindow("about")}
@@ -139,7 +156,7 @@ export default function Desktop() {
       {openWindows.includes("projects") &&
         !minimizedWindows.includes("projects") && (
           <Window
-            title="Projects"
+            title="Projects.txt - Notepad"
             isActive={activeWindow === "projects"}
             onFocus={() => focusWindow("projects")}
             onClose={() => closeWindow("projects")}
@@ -152,7 +169,7 @@ export default function Desktop() {
       {openWindows.includes("skills") &&
         !minimizedWindows.includes("skills") && (
           <Window
-            title="Skills"
+            title="Skills.txt - Notepad"
             isActive={activeWindow === "skills"}
             onFocus={() => focusWindow("skills")}
             onClose={() => closeWindow("skills")}
@@ -165,7 +182,7 @@ export default function Desktop() {
       {openWindows.includes("contact") &&
         !minimizedWindows.includes("contact") && (
           <Window
-            title="Contact"
+            title="MSN Messenger"
             isActive={activeWindow === "contact"}
             onFocus={() => focusWindow("contact")}
             onClose={() => closeWindow("contact")}
